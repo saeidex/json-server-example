@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "student1@example.com",
+      "password": "student123",
+      "role": "student",
+      "interests": ["math", "physics"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Williams",
+      "email": "teacher1@example.com",
+      "password": "teacher123",
+      "role": "teacher"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "title": "Algebra Basics",
+      "content": "This note covers linear equations and factoring.",
+      "tags": ["math", "algebra"],
+      "approved": false,
+      "uploadedBy": 1,
+      "annotations": []
+    },
+    {
+      "id": 2,
+      "title": "Newton's Laws",
+      "content": "Explains Newton's three laws of motion with examples.",
+      "tags": ["physics", "laws"],
+      "approved": true,
+      "uploadedBy": 1,
+      "annotations": [
+        { "teacherId": 2, "comment": "Add a section on force diagrams." }
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": 1,
+      "noteId": 1,
+      "questions": [
+        {
+          "question": "What is the solution to the equation 2x + 4 = 0?",
+          "options": ["x = -2", "x = 2", "x = 4", "x = -4"],
+          "answer": "x = -2"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "noteId": 2,
+      "questions": [
+        {
+          "question": "Which law explains why objects in motion stay in motion?",
+          "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+          ],
+          "answer": "Newton's First Law"
+        }
+      ]
+    }
+  ],
+  "chatbot_queries": [
+    {
+      "id": 1,
+      "noteId": 1,
+      "question": "What is factoring?",
+      "answer": "Factoring is breaking down an equation into simpler components."
+    },
+    {
+      "id": 2,
+      "noteId": 2,
+      "question": "What is Newton's Second Law?",
+      "answer": "Newton's Second Law states that force equals mass times acceleration (F = ma)."
+    }
+  ],
+  "study_groups": [
+    {
+      "id": 1,
+      "members": [1],
+      "sharedInterests": ["math", "physics"],
+      "description": "Study group focused on algebra and mechanics."
+    }
+  ]
+}
